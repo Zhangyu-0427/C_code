@@ -6,13 +6,18 @@ int main()
     scanf("%ld %ld",&n,&m);
     n_tmp = n;
     m_tmp = m;
-    while(m)
+    
+    while(m)  //以除数m作为while的判断条件
     {
         tmp = n%m;
         n   = m;
         m   = tmp;
     }
-    gcd = n;
+    
+    gcd = n;//如果出 while 循环 则 m == 0 
+            //所以 tmp == 0 根据辗转相除法 m 即为最大公约数
+    
     printf("%ld",gcd+(m_tmp*n_tmp)/gcd);
+    
     return 0;
 }
