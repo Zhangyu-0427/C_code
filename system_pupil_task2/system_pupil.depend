@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1621135972 source:c:\c\system_pupil_task2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
