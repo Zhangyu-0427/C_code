@@ -19,7 +19,7 @@ void reverse_string(char arr[])
     arr[len-1] = '\0';
     if(my_strlen(arr+1) > 1)
         reverse_string(arr+1);//第二步
-    arr[len-1] = tmp;//第四步
+    arr[len-1] = tmp;//第三步
 }
 
 int main()
