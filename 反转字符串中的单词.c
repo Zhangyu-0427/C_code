@@ -14,15 +14,16 @@ void reverse(char arr[], int begin, int end)
 		end--;
 	}
 }
+
 int main()
 {
 	int a = 0, b = 0,flag = 0;
 	char s[MAX];
 	while(gets(s))
-    {
+    	{
 	    reverse(s, 0, strlen(s)-1);
-        int arr[2];
-        int k = 0;
+            int arr[2];
+            int k = 0;
 	    int i = 0;
         for(i =0;i<strlen(s);i++)
         {
@@ -40,23 +41,24 @@ int main()
         }
         //反转单词
         i = 0;
-	    while(i < strlen(s))
-        {
-		    //跳过空格
-		    while(s[i] == ' ' && i < strlen(s))
-		    {
-			    i++;
-		    }
-		    a = i;
-		    //跳过非空格字符
-		    while(s[i] != ' ' && i < strlen(s))
-		    {
-			    i++;
-		    }
-		    b = i-1;
-		    //a~b为一个单词的下标的区间
-		    reverse(s,a,b);
+    	while(i < strlen(s))
+	{
+	    //跳过空格
+	    while(s[i] == ' ' && i < strlen(s))
+	    {
+		    i++;
 	    }
+	    a = i;
+	    //跳过非空格字符
+	    while(s[i] != ' ' && i < strlen(s))
+	    {
+		    i++;
+	    }
+	    b = i-1;
+	    //a~b为一个单词的下标的区间
+	    reverse(s,a,b);
+    	}
+	//输出反转后的单词序列
         for( i =0 ; i<strlen(s);i++)
         {
             if(s[i] == ' ' && flag == 0)
