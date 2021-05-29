@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1622256897 source:c:\c\students_score_system\student.c
+	"student.h"
+
+1622257210 source:c:\c\students_score_system\main.c
+	"student.h"
+
+1622213772 c:\c\students_score_system\student.h
+	<stdio.h>
+	<stdlib.h>
+
