@@ -45,7 +45,7 @@ int main()
     //单向链表的遍历
     while(Print_P != NULL)
     {
-        printf("%d ",Print_P->date);
+        printf("%d %p\n",Print_P->date,Print_P->Next);
         Print_P = Print_P->Next;
     }
     return 0;
