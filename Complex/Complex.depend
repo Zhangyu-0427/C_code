@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1631077777 source:a:\complex\complextest01.c
+	"Complex.h"
+
+1631076830 a:\complex\complex.h
+	<stdio.h>
+	<stdlib.h>
+
+1631077839 source:a:\complex\complex.c
+	"Complex.h"
+
